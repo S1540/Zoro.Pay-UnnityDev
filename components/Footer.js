@@ -168,15 +168,12 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 mb-14">
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                <span className="text-white font-black text-xl leading-none">
-                  Z
-                </span>
-              </div>
-              <span className="text-xl font-extrabold text-white tracking-tight">
-                zoro<span className="text-amber-400">.pe</span>
-              </span>
+            <Link href="/" className="flex items-center gap-2.5">
+              <img
+                src="/zorope1.png"
+                className="h-16 w-auto object-contain"
+                alt="Zoro.pe"
+              />
             </Link>
             <p className="text-sm leading-relaxed text-slate-500 mb-6 max-w-xs">
               India's trusted digital lending platform. Get instant personal

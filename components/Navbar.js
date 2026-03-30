@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-hidden ${
         scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
       }`}
     >
@@ -32,14 +32,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-md shadow-blue-200">
-              <span className="text-white font-black text-xl leading-none">
-                Z
-              </span>
-            </div>
-            <span className="text-xl font-extrabold text-slate-900 tracking-tight">
-              zoro<span className="text-amber-500">.pe</span>
-            </span>
+            <img
+              src="/zorope1.png"
+              className="h-16 w-auto object-contain"
+              alt="Zoro.pe"
+            />
           </Link>
 
           {/* Desktop Links */}

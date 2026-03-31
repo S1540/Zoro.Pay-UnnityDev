@@ -24,7 +24,7 @@ const loanDetails = [
 export default function Eligibility() {
   return (
     <section id="eligibility" className="bg-slate-50">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* LEFT — sticky */}
           <div className="sticky top-0 py-24">
@@ -100,7 +100,7 @@ export default function Eligibility() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
             viewport={{ once: true }}
-            className="py-24 relative z-30 bg-white"
+            className="py-2 sm:py-24 relative z-30 bg-white sm:bg-transparent"
           >
             <p className="text-[11px] font-bold tracking-[0.14em] uppercase text-slate-400 mb-4 pb-3 border-b border-slate-200">
               Loan snapshot

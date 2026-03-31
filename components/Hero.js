@@ -136,13 +136,12 @@ export default function Hero() {
                     <span>●●● WiFi 100%</span>
                   </div>
                   {/* App Logo */}
-                  <div className="flex items-center gap-2 mb-1">
-                    <div className="w-7 h-7 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center">
-                      <span className="text-white font-black text-sm">Z</span>
-                    </div>
-                    <span className="text-white font-bold text-sm">
-                      zoro<span className="text-amber-400">.pe</span>
-                    </span>
+                  <div className="flex items-center gap-2.5">
+                    <img
+                      src="/zorope1.png"
+                      className="h-16 w-auto object-contain"
+                      alt="Zoro.pe"
+                    />
                   </div>
                   <p className="text-slate-500 text-[10px] mb-5">
                     Your Loan, Your Way

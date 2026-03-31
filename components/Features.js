@@ -76,9 +76,9 @@ export default function Features() {
         {/* Header */}
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="flex flex-wrap justify-between items-end gap-6 mb-12"
         >
@@ -108,9 +108,9 @@ export default function Features() {
         </motion.div>
         {/* Bento Grid */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true }}
           className="grid grid-cols-2 lg:grid-cols-4 gap-3"
         >

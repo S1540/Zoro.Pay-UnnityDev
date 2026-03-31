@@ -36,9 +36,9 @@ export default function HowItWorks() {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
@@ -70,9 +70,9 @@ export default function HowItWorks() {
 
           {/* Right Steps */}
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.15 }}
             viewport={{ once: true }}
             className="pt-1"
           >

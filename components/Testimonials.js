@@ -85,9 +85,9 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="flex flex-wrap justify-between items-end gap-6 mb-14"
         >
@@ -132,9 +132,9 @@ export default function Testimonials() {
 
         {/* Cards */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true }}
           className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5 mb-14"
         >

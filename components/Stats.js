@@ -33,9 +33,9 @@ export default function Stats() {
   return (
     <section className="py-14 bg-white border-b border-slate-100">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
         className="max-w-7xl mx-auto px-5 sm:px-8"
       >

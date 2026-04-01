@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const stats = [
   {
     icon: IndianRupee,
-    value: "₹5 Lakhs",
+    value: "₹5 M",
     label: "Max Loan Amount",
     color: "text-blue-600 bg-blue-50",
   },
@@ -17,7 +17,7 @@ const stats = [
   },
   {
     icon: Users,
-    value: "5 Lakh+",
+    value: "5 M+",
     label: "Customers Served",
     color: "text-purple-600 bg-purple-50",
   },

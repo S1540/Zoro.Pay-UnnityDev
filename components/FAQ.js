@@ -6,19 +6,19 @@ import { motion } from "framer-motion";
 const faqs = [
   {
     q: "What is the maximum loan amount I can get?",
-    a: "You can borrow up to ₹5,00,000 (5 Lakhs) with Zoro.pe. The exact amount approved depends on your income, credit score, and repayment capacity evaluated by our system.",
+    a: "You can borrow up to ₹5,00,000 (5 Lakhs) with Zorope. The exact amount approved depends on your income, credit score, and repayment capacity evaluated by our system.",
   },
   {
     q: "How quickly will the money reach my account?",
-    a: "Once approved, the loan amount is credited directly to your registered bank account within 10 minutes. The entire journey — from application to disbursal — is 100% digital with no manual steps.",
+    a: "Once approved, the loan amount is credited directly to your registered bank account within 15 minutes. The entire journey — from application to disbursal — is 100% digital with no manual steps.",
   },
   {
     q: "What documents do I need to apply?",
-    a: "Just three things: your Aadhaar card, PAN card, and last 3 months' bank statement. Everything is submitted digitally. No physical copies, no courier, no branch visit.",
+    a: "Just three things: your Aadhaar card, PAN card. Everything is submitted digitally. No physical copies, no courier, no branch visit.",
   },
   {
     q: "Do I need to provide any collateral or guarantor?",
-    a: "No. Zoro.pe provides 100% unsecured personal loans. You don't need to pledge property, gold, FDs, or involve a guarantor of any kind.",
+    a: "No. Zorope provides 100% unsecured personal loans. You don't need to pledge property, gold, FDs, or involve a guarantor of any kind.",
   },
   {
     q: "What interest rate will I be charged?",
@@ -26,15 +26,15 @@ const faqs = [
   },
   {
     q: "Can I repay early or close my loan before tenure ends?",
-    a: "Yes, you can foreclose your loan after completing 3 EMIs. Foreclosure charges may apply as per your loan agreement. The exact terms are clearly mentioned in your sanction letter.",
+    a: "Yes, The exact terms are clearly mentioned in your sanction letter.",
   },
   {
     q: "Will checking my eligibility affect my CIBIL score?",
     a: "No. Checking your eligibility on Zoro.pe is a soft inquiry and doesn't impact your CIBIL score. A hard credit inquiry only happens at the time of your final loan application.",
   },
   {
-    q: "Is Zoro.pe safe? Is it regulated by RBI?",
-    a: "Yes. Zoro.pe operates as a registered NBFC under Reserve Bank of India (RBI) guidelines. Your personal data is protected with 256-bit bank-grade encryption, and we follow all RBI fair lending practices.",
+    q: "Is Zorope safe? Is it regulated by RBI?",
+    a: "Yes, Zorope operates as a registered NBFC under Reserve Bank of India (RBI) guidelines. Your personal data is protected with 256-bit bank-grade encryption, and we follow all RBI fair lending practices.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function FAQ() {
               href="mailto:support@zoro.pe"
               className="hidden sm:inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
             >
-              support@zoro.pe →
+              support@zorope.com →
             </a>
           </div>
 

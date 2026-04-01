@@ -4,12 +4,11 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const criteria = [
-  "Indian citizen, 18–55 years",
+  "Indian citizen, 18+ years",
   "Salaried or self-employed",
   "Monthly income ₹15,000+",
   "Serviceable city resident",
   "Valid Aadhaar + PAN card",
-  "Bank account, 3+ months",
 ];
 
 const loanDetails = [
@@ -24,10 +23,10 @@ const loanDetails = [
 export default function Eligibility() {
   return (
     <section id="eligibility" className="bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8">
+        <div className="grid grid-cols-1 gap-12 items-start">
           {/* LEFT — sticky */}
-          <div className="sticky top-0 py-24">
+          <div className=" py-24">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +50,7 @@ export default function Eligibility() {
               </h2>
               <p className="text-[14px] text-slate-500 leading-relaxed max-w-md mb-10 text-center sm:text-left">
                 Simple and fair eligibility. Most working Indians qualify for a
-                Zoro.pe loan — no complicated criteria, no guesswork.
+                Zorope loan — no complicated criteria, no guesswork.
               </p>
 
               <p className="text-[11px] font-bold tracking-[0.14em] uppercase text-slate-400 mb-4 pb-3 border-b border-slate-200">
@@ -95,7 +94,7 @@ export default function Eligibility() {
           </div>
 
           {/* RIGHT — scrolls normally */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
@@ -148,7 +147,7 @@ export default function Eligibility() {
               </div>
             </div>
 
-            {/* Required Documents */}
+            
             <div className="mt-8 bg-white border border-slate-200 rounded-xl p-6">
               <p className="text-[11px] font-bold tracking-[0.14em] uppercase text-slate-400 mb-4">
                 Required documents
@@ -178,7 +177,7 @@ export default function Eligibility() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

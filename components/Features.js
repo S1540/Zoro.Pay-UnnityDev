@@ -29,13 +29,7 @@ const features = [
   {
     icon: FileCheck,
     title: "Minimal docs",
-    desc: "Just Aadhaar + PAN + 3-month bank statement.",
-    wide: false,
-  },
-  {
-    icon: CalendarClock,
-    title: "Flexible tenure",
-    desc: "3 to 36 months. Pick the EMI that fits your monthly budget.",
+    desc: "Just Aadhaar + PAN (100% digital).",
     wide: false,
   },
   {
@@ -53,7 +47,7 @@ const features = [
   {
     icon: Clock,
     title: "RBI compliant",
-    desc: "Fully regulated and operating under Reserve Bank of India guidelines.",
+    desc: "Fully regulated and operating under Reserve Bank of India Lending guidelines.",
     wide: false,
   },
   {
@@ -70,7 +64,7 @@ export default function Features() {
       className="py-24 bg-slate-50"
       style={{ fontFamily: "'DM Sans', sans-serif" }}
     >
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');`}</style>
+      {/* <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');`}</style> */}
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Header */}
@@ -84,7 +78,7 @@ export default function Features() {
         >
           <div className="w-full sm:w-auto text-center sm:text-left">
             <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-blue-600 mb-3">
-              Why Zoro.pe
+              Why ZoroPe
             </p>
             <h2
               className="text-slate-900 leading-[1.1] text-4xl sm:text-6xl"

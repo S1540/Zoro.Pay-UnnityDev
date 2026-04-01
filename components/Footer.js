@@ -145,19 +145,19 @@ const seoLinkCategories = [
       "Loan Eligibility Calculator",
     ],
   },
-  {
-    heading: "Bank EMI Calculators",
-    links: [
-      "HDFC Bank EMI Calculator",
-      "SBI EMI Calculator",
-      "ICICI Bank EMI Calculator",
-      "Axis Bank EMI Calculator",
-      "Kotak Mahindra EMI Calculator",
-      "IndusInd Bank EMI Calculator",
-      "Yes Bank EMI Calculator",
-      "Bajaj Finserv EMI Calculator",
-    ],
-  },
+  // {
+  //   heading: "Bank EMI Calculators",
+  //   links: [
+  //     "HDFC Bank EMI Calculator",
+  //     "SBI EMI Calculator",
+  //     "ICICI Bank EMI Calculator",
+  //     "Axis Bank EMI Calculator",
+  //     "Kotak Mahindra EMI Calculator",
+  //     "IndusInd Bank EMI Calculator",
+  //     "Yes Bank EMI Calculator",
+  //     "Bajaj Finserv EMI Calculator",
+  //   ],
+  // },
 ];
 
 export default function Footer() {
@@ -263,18 +263,18 @@ export default function Footer() {
               <span className="text-slate-500 font-semibold">
                 Regulatory Information:{" "}
               </span>
-              Zoro.pe Financial Services Private Limited is a Non-Banking
-              Financial Company (NBFC) registered with the Reserve Bank of India
-              (RBI). CIN: U65999MH2024PTC000001. RBI Registration No.:
-              N-13.02345. Zoro.pe is not a bank and does not accept deposits.
-              Loans are subject to credit evaluation, KYC verification, and
-              approval at Zoro.pe's discretion. Interest rates, processing fees,
-              and all applicable charges are communicated to the borrower before
-              loan disbursement. Late repayment may attract penal charges and
-              negatively impact your credit score with credit bureaus (CIBIL,
-              Experian, Equifax, CRIF). Please read all loan-related documents
-              carefully before signing. Borrowers are advised to borrow
-              responsibly within their repayment capacity.
+              Aeternum Tech Private Limited is a Non-Banking Financial Company
+              (NBFC) registered with the Reserve Bank of India (RBI). CIN:
+              U65999MH2024PTC000001. Aeternum Tech Private Limited is not a bank
+              and does not accept deposits. Loans are subject to credit
+              evaluation, KYC verification, and approval at various lending
+              partners. Interest rates, processing fees, and all applicable
+              charges are communicated to the borrower before loan disbursement.
+              Late repayment may attract penal charges and negatively impact on
+              your credit score with credit bureaus like(CIBIL, Experian,
+              Equifax, CRIF). Please read all loan-related documents carefully
+              before signing. Borrowers are advised to borrow responsibly within
+              their repayment capacity.
             </p>
           </div>
 
@@ -325,19 +325,16 @@ export default function Footer() {
               {/* Pipe-separated links */}
               <div className="flex flex-wrap items-center gap-x-0 gap-y-1">
                 {cat.links.map((link, i) => (
-                  <span key={link} className="flex items-center">
-                    <Link
-                      href="/under-maintenance"
-                      className="text-xs text-slate-500 hover:text-blue-400 transition-colors whitespace-nowrap"
-                    >
+                  <ul key={link} className="flex items-center ">
+                    <li className="text-xs px-4 list-disc text-slate-500 hover:text-blue-400 transition-colors whitespace-nowrap">
                       {link}
-                    </Link>
-                    {i < cat.links.length - 1 && (
-                      <span className="text-slate-700 mx-2 text-xs select-none">
+                    </li>
+                    {/* {i < cat.links.length - 1 && (
+                      <span className="text-slate-700 px-2 text-xs select-none">
                         |
                       </span>
-                    )}
-                  </span>
+                    )} */}
+                  </ul>
                 ))}
               </div>
             </div>

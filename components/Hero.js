@@ -25,7 +25,7 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 bg-blue-500/15 border border-blue-500/25 text-blue-400 text-xs font-semibold px-4 py-2 rounded-full mb-7">
               <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"></span>
-              RBI Registered NBFC · 100% Digital
+              RBI Registered NBFC’s 100% Digital lending Partners
             </div>
 
             <h1 className="text-5xl sm:text-6xl font-black text-white leading-[1.1] mb-6 tracking-tight">
@@ -46,7 +46,7 @@ export default function Hero() {
             {/* Trust pills */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
               {[
-                { icon: <Zap size={13} />, text: "Disbursal in 10 mins" },
+                { icon: <Zap size={13} />, text: "Quick Disbursal" },
                 { icon: <ShieldCheck size={13} />, text: "Zero collateral" },
                 { icon: <Clock size={13} />, text: "3-step application" },
               ].map((item) => (

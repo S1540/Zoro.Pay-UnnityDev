@@ -44,20 +44,16 @@ const reviews = [
 
 const trustBadges = [
   {
-    icon: <Building2 size={16} className="text-blue-600" />,
-    text: "RBI Registered NBFC",
-  },
-  {
     icon: <Lock size={16} className="text-blue-600" />,
     text: "256-bit Encryption",
   },
   {
-    icon: <Star size={16} className="text-amber-400 fill-amber-400" />,
-    text: "4.8 / 5 App Rating",
+    icon: <Building2 size={16} className="text-blue-600" />,
+    text: "RBI Registered NBFC’s 100% Digital landing Partners",
   },
   {
-    icon: <ShieldCheck size={16} className="text-blue-600" />,
-    text: "ISO 27001 Certified",
+    icon: <Star size={16} className="text-amber-400 fill-amber-400" />,
+    text: "4.8 / 5 App Rating",
   },
 ];
 

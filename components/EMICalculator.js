@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function EMICalculator() {
-  const [loanAmount, setLoanAmount] = useState(200000);
+  const [loanAmount, setLoanAmount] = useState(50000);
   const [tenure, setTenure] = useState(12);
   const [rate, setRate] = useState(15);
 
@@ -27,12 +27,12 @@ export default function EMICalculator() {
     {
       label: "Loan amount",
       display: fmt(loanAmount),
-      min: 50000,
+      min: 5000,
       max: 500000,
-      step: 10000,
+      step: 1000,
       value: loanAmount,
       onChange: setLoanAmount,
-      minLabel: "₹50K",
+      minLabel: "₹5K",
       maxLabel: "₹5L",
     },
     {

@@ -281,8 +281,8 @@ export default function Footer() {
           {/* Bottom bar */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <p className="text-xs text-slate-600">
-              © {new Date().getFullYear()} Zoro.pe Financial Services Pvt. Ltd.
-              All rights reserved.
+              © {new Date().getFullYear()} Aeternum Tech Private Limited. All
+              rights reserved
             </p>
             <div className="flex flex-wrap gap-5">
               {[
@@ -322,21 +322,18 @@ export default function Footer() {
                   {cat.heading}
                 </span>
               </div>
-              {/* Pipe-separated links */}
-              <div className="flex flex-wrap items-center gap-x-0 gap-y-1">
+
+              <ul className="flex flex-wrap gap-x-0 gap-y-1.5 flex-1">
                 {cat.links.map((link, i) => (
-                  <ul key={link} className="flex items-center ">
-                    <li className="text-xs px-4 list-disc text-slate-500 hover:text-blue-400 transition-colors whitespace-nowrap">
-                      {link}
-                    </li>
-                    {/* {i < cat.links.length - 1 && (
-                      <span className="text-slate-700 px-2 text-xs select-none">
-                        |
-                      </span>
-                    )} */}
-                  </ul>
+                  <li
+                    key={link}
+                    className="w-1/2 sm:w-1/3 lg:w-1/5 flex items-center gap-1.5 text-xs text-slate-500 hover:text-blue-400 transition-colors"
+                  >
+                    <span className="w-1 h-1 rounded-full bg-slate-600 flex-shrink-0" />
+                    <span className="truncate">{link}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>

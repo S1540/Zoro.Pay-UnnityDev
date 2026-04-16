@@ -17,7 +17,7 @@ const reviews = [
     name: "Priya Mehta",
     location: "Mumbai",
     role: "Marketing Manager",
-    text: "Transparent fees, no hidden charges, and support answered on the first ring. Zoro.pe is the real deal — I was skeptical but now I'm a believer.",
+    text: "Transparent fees, no hidden charges, and support answered on the first ring. Zorope is the real deal — I was skeptical but now I'm a believer.",
     rating: 5,
     initials: "PM",
     color: "#185FA5",
@@ -26,7 +26,7 @@ const reviews = [
     name: "Arjun Nair",
     location: "Bengaluru",
     role: "Freelance Designer",
-    text: "Banks always rejected me as a freelancer. Zoro.pe looked at my bank statements instead. Got ₹1.5 Lakhs within the hour. Life-changing.",
+    text: "Banks always rejected me as a freelancer. Zorope looked at my bank statements instead. Got ₹1.5 Lakhs within the hour. Life-changing.",
     rating: 5,
     initials: "AN",
     color: "#7c3aed",
@@ -44,12 +44,12 @@ const reviews = [
 
 const trustBadges = [
   {
-    icon: <Lock size={16} className="text-blue-600" />,
+    icon: <Lock size={16} className="text-[#0B409C]" />,
     text: "256-bit Encryption",
   },
   {
-    icon: <Building2 size={16} className="text-blue-600" />,
-    text: "RBI Registered NBFC’s 100% Digital landing Partners",
+    icon: <Building2 size={16} className="text-[#0B409C]" />,
+    text: "RBI Registered NBFC’s 100% Digital lending Partners",
   },
   {
     icon: <Star size={16} className="text-amber-400 fill-amber-400" />,
@@ -88,7 +88,7 @@ export default function Testimonials() {
           className="flex flex-wrap justify-between items-end gap-6 mb-14"
         >
           <div className="max-w-md w-full text-center sm:text-left mx-auto sm:mx-0">
-            <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-blue-600 mb-3">
+            <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-slate-400 mb-3">
               Real people
             </p>
             <h2
@@ -137,7 +137,7 @@ export default function Testimonials() {
           {reviews.map((r) => (
             <div
               key={r.name}
-              className="bg-slate-50 border border-slate-200 rounded-2xl p-5 flex flex-col gap-4 hover:border-blue-200 hover:shadow-[0_0_0_3px_#dbeafe] transition-all duration-200"
+              className="bg-slate-50 border border-slate-200 rounded-md p-5 flex flex-col gap-4 hover:border-slate-300  transition-all duration-200"
             >
               <StarRow rating={r.rating} />
 

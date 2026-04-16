@@ -12,19 +12,20 @@ import {
   Phone,
   ArrowRight,
 } from "lucide-react";
+import Button from "./Button";
 
 const features = [
   {
     icon: Zap,
     title: "Instant disbursal",
-    desc: "Money in your account within 10 minutes of approval. No manual processing delays.",
+    desc: "Money in your account within 15 minutes of approval. No manual processing delays.",
     wide: true,
   },
   {
     icon: ShieldCheck,
     title: "No collateral",
     desc: "Fully unsecured loans. No property, gold, or guarantor needed.",
-    wide: false,
+    wide: true,
   },
   {
     icon: FileCheck,
@@ -42,7 +43,7 @@ const features = [
     icon: DollarSign,
     title: "Transparent fees",
     desc: "No hidden charges. No surprises. See your exact EMI before you apply.",
-    wide: true,
+    wide: false,
   },
   {
     icon: Clock,
@@ -61,7 +62,7 @@ const features = [
 export default function Features() {
   return (
     <section
-      className="py-24 bg-slate-50"
+      className="py-24 bg-[#FFF3F3]"
       style={{ fontFamily: "'DM Sans', sans-serif" }}
     >
       {/* <style>{`@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');`}</style> */}
@@ -77,8 +78,8 @@ export default function Features() {
           className="flex flex-wrap justify-between items-end gap-6 mb-12"
         >
           <div className="w-full sm:w-auto text-center sm:text-left">
-            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-blue-600 mb-3">
-              Why ZoroPe
+            <p className="text-[11px] font-medium tracking-[0.18em] uppercase text-slate-400 mb-4">
+              Why Zorope
             </p>
             <h2
               className="text-slate-900 leading-[1.1] text-4xl sm:text-6xl"
@@ -92,12 +93,13 @@ export default function Features() {
               For real people.
             </h2>
           </div>
-          <Link
-            href="/under-maintenance"
-            className="hidden sm:inline-flex items-center gap-2 bg-blue-700 hover:bg-[#0a1628] shadow-md hover:shadow-blue-900/60 text-white text-[13px] font-semibold px-6 py-3.5 rounded-lg transition-colors tracking-wide duration-300 ease-in-out"
-          >
-            Apply now
-            <ArrowRight size={14} />
+          <Link href="/under-maintenance">
+            <Button
+              name={"Apply now"}
+              px={"px-4"}
+              py={"py-2"}
+              font={"medium"}
+            />
           </Link>
         </motion.div>
         {/* Bento Grid */}
@@ -113,12 +115,16 @@ export default function Features() {
             return (
               <div
                 key={i}
-                className={`bg-white border border-slate-100 hover:border-blue-400 hover:shadow-[0_0_0_2px_#dbeafe] rounded-xl p-5 flex flex-col gap-3 transition-all duration-200 ${
+                className={`bg-white border border-slate-200 hover:border-slate-400 hover:bg-[#FFF3F3] hover:shadow- rounded-md p-5 flex flex-col gap-3 transition-all duration-200 ${
                   f.wide ? "col-span-2" : ""
                 }`}
               >
                 <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
-                  <Icon size={18} className="text-blue-600" strokeWidth={1.8} />
+                  <Icon
+                    size={18}
+                    className="text-[#0B409C]"
+                    strokeWidth={1.8}
+                  />
                 </div>
                 <div>
                   <h3 className="text-[15px] font-medium text-slate-900 mb-1.5 leading-snug">

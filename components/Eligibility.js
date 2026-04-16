@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Button from "./Button";
 
 const criteria = [
   "Indian citizen, 18+ years",
@@ -33,7 +34,7 @@ export default function Eligibility() {
               transition={{ duration: 0.7, ease: "easeOut" }}
               viewport={{ once: true }}
             >
-              <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-blue-600 mb-3 text-center sm:text-left">
+              <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-slate-400 mb-4 text-center sm:text-left">
                 Who can apply
               </p>
               <h2
@@ -68,7 +69,7 @@ export default function Eligibility() {
                         height="10"
                         viewBox="0 0 10 10"
                         fill="none"
-                        stroke="#185FA5"
+                        stroke="#0B409C"
                         strokeWidth="2.2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -83,12 +84,13 @@ export default function Eligibility() {
                 ))}
               </div>
 
-              <Link
-                href="/under-maintenance"
-                className="flex sm:inline-flex justify-center sm:justify-start items-center gap-2 bg-blue-700 hover:bg-[#0a1628] shadow-md hover:shadow-blue-900/60 text-white text-[13px] font-semibold px-6 py-3.5 rounded-lg transition-colors tracking-wide duration-300 ease-in-out"
-              >
-                Check my eligibility
-                <ArrowRight size={14} />
+              <Link href="/under-maintenance">
+                <Button
+                  name={"Check my eligibility"}
+                  py="py-3"
+                  px={"px-5"}
+                  font={"medium"}
+                />
               </Link>
             </motion.div>
           </div>

@@ -85,6 +85,7 @@ const seoLinkCategories = [
       "Personal Loan Without CIBIL",
       "Small Personal Loan",
       "Urgent Loan",
+      "Bullet Loan",
     ],
   },
   {
@@ -146,7 +147,7 @@ const seoLinkCategories = [
     ],
   },
   // {
-  //   heading: "Bank EMI Calculators",
+  //   heading: "Bullet Loan",
   //   links: [
   //     "HDFC Bank EMI Calculator",
   //     "SBI EMI Calculator",
@@ -170,9 +171,9 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             <Link href="/" className="flex items-center gap-2.5">
               <img
-                src="/zorope1.png"
+                src="/Zorope-apr.png"
                 className="h-16 w-auto object-contain"
-                alt="Zoro.pe"
+                alt="Zorope"
               />
             </Link>
             <p className="text-sm leading-relaxed text-slate-500 mb-6 max-w-xs">
@@ -205,7 +206,7 @@ export default function Footer() {
                 <Link
                   key={s.bottom}
                   href="/under-maintenance"
-                  className="inline-flex items-center gap-2.5 bg-white/5 hover:bg-white/8 border border-white/8 px-4 py-2.5 rounded-xl transition-all w-fit"
+                  className="inline-flex items-center gap-2.5 bg-white/5 hover:bg-white/8 border border-white/8 px-4 py-2.5 rounded-md transition-all w-fit"
                 >
                   <div className="w-6 h-6 rounded-full">{s.icon}</div>
                   <div>
@@ -225,7 +226,7 @@ export default function Footer() {
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="w-8 h-8 bg-white/5 hover:bg-blue-600 border border-white/8 hover:border-blue-600 rounded-lg flex items-center justify-center text-slate-400 hover:text-white transition-all"
+                  className="w-8 h-8 bg-white/5 hover:bg-blue-600 border border-white/8 hover:border-blue-600 rounded-md flex items-center justify-center text-slate-400 hover:text-white transition-all"
                 >
                   {s.icon}
                 </Link>
@@ -279,12 +280,20 @@ export default function Footer() {
           </div>
 
           {/* Bottom bar */}
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 md:gap-4">
             <p className="text-xs text-slate-600">
               © {new Date().getFullYear()} Aeternum Tech Private Limited. All
               rights reserved
             </p>
-            <div className="flex flex-wrap gap-5">
+            <p className="text-xs text-slate-600">
+              Designed and Developed by{" "}
+              <a href="https://unnity.in">
+                {" "}
+                Team
+                <strong>Unnity.in</strong>
+              </a>
+            </p>
+            <div className="flex flex-wrap gap-3 md:gap-5">
               {[
                 "Privacy Policy",
                 "Terms & Conditions",
@@ -329,7 +338,9 @@ export default function Footer() {
                     key={link}
                     className="w-1/2 sm:w-1/3 lg:w-1/5 flex items-center gap-1.5 text-xs text-slate-500 hover:text-blue-400 transition-colors"
                   >
-                    <span className="w-1 h-1 rounded-full bg-slate-600 flex-shrink-0" />
+                    <span className=" h-full w-[1px] bg-slate-600 flex-shrink-0">
+                      {" "}
+                    </span>
                     <span className="truncate">{link}</span>
                   </li>
                 ))}

@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Will checking my eligibility affect my CIBIL score?",
-    a: "No. Checking your eligibility on Zoro.pe is a soft inquiry and doesn't impact your CIBIL score. A hard credit inquiry only happens at the time of your final loan application.",
+    a: "No. Checking your eligibility on Zorope is a soft inquiry and doesn't impact your CIBIL score. A hard credit inquiry only happens at the time of your final loan application.",
   },
   {
     q: "Is Zorope safe? Is it regulated by RBI?",
@@ -47,7 +47,7 @@ export default function FAQ() {
         <div className="grid md:grid-cols-3 gap-16">
           {/* Left sticky heading */}
           <div className="md:sticky md:top-24 md:self-start text-center md:text-left">
-            <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-blue-600 mb-3">
+            <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-slate-400 mb-3">
               Got Questions?
             </p>
             <h2
@@ -67,8 +67,8 @@ export default function FAQ() {
               anytime.
             </p>
             <a
-              href="mailto:support@zoro.pe"
-              className="hidden sm:inline-flex items-center gap-2 text-blue-600 font-semibold text-sm hover:text-blue-700 transition-colors"
+              href="mailto:support@zorope.com"
+              className="hidden sm:inline-flex items-center gap-2 text-[#0B409C] font-semibold text-sm hover:text-[#0B409C] transition-colors"
             >
               support@zorope.com →
             </a>

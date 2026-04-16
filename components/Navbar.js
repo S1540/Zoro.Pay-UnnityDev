@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Button from "./Button";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-hidden ${
-        scrolled ? "bg-[#FFE4EC] shadow-md" : "bg-[#FFE4EC] backdrop-blur-sm"
+        scrolled ? "bg-[#FFF3F3] shadow-md" : "bg-[#fff] backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
@@ -33,9 +34,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
             <img
-              src="/zorope1.png"
-              className="h-16 w-auto object-contain"
-              alt="Zoro.pe"
+              src="/Zorope-apr.png"
+              className="h-16 w-auto object-contain scale-110"
+              alt="Zorope"
             />
           </Link>
 
@@ -45,7 +46,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-slate-600 hover:text-green-800 transition-colors"
               >
                 {link.label}
               </Link>
@@ -56,15 +57,17 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/under-maintenance"
-              className="text-sm font-semibold text-blue-700 hover:text-green-800"
+              className="text-sm font-semibold text-slate-600 hover:text-green-800"
             >
               Log in
             </Link>
-            <Link
-              href="/under-maintenance"
-              className="bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all shadow-sm shadow-blue-200 hover:bg-[#0a1628] hover:shadow-blue-900/60 duration-300 ease-in-out"
-            >
-              Apply Now →
+            <Link href="/under-maintenance">
+              <Button
+                name="Apply Now"
+                py={"py-2"}
+                px={"px-4"}
+                font={"medium"}
+              />
             </Link>
           </div>
 

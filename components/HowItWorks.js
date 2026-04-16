@@ -54,13 +54,13 @@ export default function HowItWorks() {
             >
               Three steps.
               <br />
-              <em className="text-blue-600 not-italic">Under 15 minutes.</em>
+              <em className="text-[#0B409C] not-italic">Under 15 minutes.</em>
             </h2>
             <p className="text-[15px] text-slate-500 leading-relaxed mb-6 max-w-md font-light mx-auto lg:mx-0">
               We've removed every unnecessary step from the loan process. No
               bank visits. No physical documents. No waiting days for approval.
             </p>
-            <div className="flex items-start gap-3 bg-slate-50 border-l-2 border-blue-600 pl-4 pr-4 py-3 rounded-r-lg max-w-md mx-auto lg:mx-0">
+            <div className="flex items-start gap-3 bg-slate-50 border-l-2 border-[#0B409C] pl-4 pr-4 py-3 rounded-r-lg max-w-md mx-auto lg:mx-0">
               <p className="text-[13px] text-slate-500 leading-relaxed text-left">
                 "Got my loan in 8 minutes flat. Couldn't believe it was real." —{" "}
                 <span className="text-slate-800 font-medium">Rahul, Delhi</span>
@@ -99,7 +99,7 @@ export default function HowItWorks() {
                     </span>
                   </div>
                   {i < steps.length - 1 && (
-                    <div className="w-px flex-1 bg-slate-100 my-1.5 min-h-[40px]" />
+                    <div className="w-px flex-1 bg-slate-200 my-1.5 min-h-[40px]" />
                   )}
                 </div>
 
@@ -107,8 +107,8 @@ export default function HowItWorks() {
                   className={`pl-5 ${i < steps.length - 1 ? "pb-10" : "pb-0"}`}
                 >
                   <div className="flex items-center gap-1.5 mb-1.5">
-                    <span className="w-[5px] h-[5px] bg-blue-600 rounded-full" />
-                    <span className="text-[11px] font-medium tracking-[0.1em] uppercase text-blue-600">
+                    <span className="w-[5px] h-[5px] bg-[#0B409C] rounded-full" />
+                    <span className="text-[11px] font-medium tracking-[0.1em] uppercase text-[#0B409C]">
                       {step.tag}
                     </span>
                   </div>

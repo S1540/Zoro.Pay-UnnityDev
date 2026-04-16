@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Button from "./Button";
 
 export default function EMICalculator() {
   const [loanAmount, setLoanAmount] = useState(50000);
@@ -28,12 +29,12 @@ export default function EMICalculator() {
       label: "Loan amount",
       display: fmt(loanAmount),
       min: 5000,
-      max: 500000,
+      max: 5000000,
       step: 1000,
       value: loanAmount,
       onChange: setLoanAmount,
       minLabel: "₹5K",
-      maxLabel: "₹5L",
+      maxLabel: "₹50L",
     },
     {
       label: "Tenure",
@@ -70,7 +71,7 @@ export default function EMICalculator() {
           viewport={{ once: true }}
           className="bg-white px-8 sm:px-14 py-20 mt-2 mb-2 flex flex-col justify-center rounded-lg"
         >
-          <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-blue-600 mb-3 text-center sm:text-left">
+          <p className="text-[11px] font-semibold tracking-[0.18em] uppercase text-[#0B409C] mb-3 text-center sm:text-left">
             Plan ahead
           </p>
           <h2
@@ -96,7 +97,7 @@ export default function EMICalculator() {
                 <label className="text-[12px] font-semibold text-slate-600 tracking-wide">
                   {s.label}
                 </label>
-                <span className="text-[13px] font-bold text-blue-600">
+                <span className="text-[13px] font-bold text-[#0B409C]">
                   {s.display}
                 </span>
               </div>
@@ -107,7 +108,7 @@ export default function EMICalculator() {
                 step={s.step}
                 value={s.value}
                 onChange={(e) => s.onChange(Number(e.target.value))}
-                className="w-full cursor-pointer accent-blue-600"
+                className="w-full cursor-pointer bg-[#0B409C]"
                 style={{ height: "3px" }}
               />
               <div className="flex justify-between text-[11px] text-slate-400 font-medium mt-1.5">
@@ -143,7 +144,7 @@ export default function EMICalculator() {
           >
             {fmt(emi)}
           </p>
-          <p className="text-[11.5px] text-blue-400 font-semibold tracking-[0.1em] uppercase mb-8">
+          <p className="text-[11.5px] text-[#0B409C] font-semibold tracking-[0.1em] uppercase mb-8">
             per month
           </p>
 
@@ -168,7 +169,7 @@ export default function EMICalculator() {
                 cy="42"
                 r="32"
                 fill="none"
-                stroke="#1d4ed8"
+                stroke="#E11D48"
                 strokeWidth="13"
                 strokeDasharray={`${intLen} ${circ - intLen}`}
                 strokeDashoffset={-priLen}
@@ -179,7 +180,7 @@ export default function EMICalculator() {
                 cy="42"
                 r="32"
                 fill="none"
-                stroke="#60a5fa"
+                stroke="#0B409C"
                 strokeWidth="13"
                 strokeDasharray={`${priLen} ${circ - priLen}`}
                 strokeDashoffset={0}
@@ -188,8 +189,8 @@ export default function EMICalculator() {
             </svg>
             <div className="flex flex-col gap-2.5">
               {[
-                { color: "#60a5fa", label: "Principal", pct: `${priPct}%` },
-                { color: "#1d4ed8", label: "Interest", pct: `${intPct}%` },
+                { color: "#0B409C", label: "Principal", pct: `${priPct}%` },
+                { color: "#E11D48", label: "Interest", pct: `${intPct}%` },
               ].map((l) => (
                 <div key={l.label} className="flex items-center gap-2.5">
                   <div
@@ -227,7 +228,7 @@ export default function EMICalculator() {
               >
                 <span className="text-[12px] text-white/38">{row.label}</span>
                 <span
-                  className={`text-[13px] font-semibold ${row.accent ? "text-blue-400" : "text-white"}`}
+                  className={`text-[13px] font-semibold ${row.accent ? "text-[#E11D48]" : "text-white"}`}
                 >
                   {row.value}
                 </span>
@@ -242,12 +243,13 @@ export default function EMICalculator() {
             </div>
           </div>
 
-          <Link
-            href="/under-maintenance"
-            className="mt-10 flex items-center justify-center gap-2 bg-blue-700 hover:bg-[#0a1628] shadow-md hover:shadow-blue-900/60 text-white text-[13px] font-semibold py-3.5 rounded-lg transition-colors tracking-wide duration-300 ease-in-out"
-          >
-            Apply for this loan
-            <ArrowRight size={14} />
+          <Link href="/under-maintenance" className="py-4">
+            <Button
+              name={"Apply for this loan"}
+              px={"px-5"}
+              py={"py-3"}
+              font={"medium"}
+            />
           </Link>
         </motion.div>
       </div>

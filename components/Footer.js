@@ -336,24 +336,35 @@ export default function Footer() {
               {/* Links grid — equal columns with pipe separator */}
               <div className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-y-[10px]">
                 {cat.links.map((link, i) => {
-                  const isLastCol = (i + 1) % 4 === 0;
+                  const totalCols = 4; // md
+                  const mobileCols = 2;
+
+                  // mobile: hide pipe on 2nd col (index 1, 3, 5...)
+                  // desktop: hide pipe on 4th col
+                  const isMobileLastCol = (i + 1) % mobileCols === 0;
+                  const isDesktopLastCol = (i + 1) % totalCols === 0;
                   const isLastItem = i === cat.links.length - 1;
-                  const hidePipe = isLastCol || isLastItem;
 
                   return (
                     <div
                       key={link}
-                      className="flex items-center text-[11px] text-slate-500"
+                      className="flex items-center text-[11px] text-slate-500 py-0.5"
                     >
-                      <Link
-                        href="/under-maintenance"
-                        className="flex-1 hover:text-blue-400 transition-colors truncate"
-                      >
+                      <span className="flex-1 min-w-0 hover:text-blue-400 transition-colors truncate pr-2">
                         {link}
-                      </Link>
+                      </span>
+                      {/* Mobile pipe — hidden on 2nd col */}
                       <span
-                        className={`px-2.5 text-slate-700 select-none ${
-                          hidePipe ? "invisible" : ""
+                        className={`text-slate-700 select-none w-4 text-center md:hidden ${
+                          isMobileLastCol || isLastItem ? "invisible" : ""
+                        }`}
+                      >
+                        |
+                      </span>
+                      {/* Desktop pipe — hidden on 4th col */}
+                      <span
+                        className={`text-slate-700 select-none w-4 text-center hidden md:inline ${
+                          isDesktopLastCol || isLastItem ? "invisible" : ""
                         }`}
                       >
                         |

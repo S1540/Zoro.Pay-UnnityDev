@@ -285,14 +285,14 @@ export default function Footer() {
               © {new Date().getFullYear()} Aeternum Tech Private Limited. All
               rights reserved
             </p>
-            <p className="text-xs text-slate-600">
+            {/* <p className="text-xs text-slate-600">
               Designed and Developed by{" "}
               <a href="https://unnity.in">
                 {" "}
                 Team
                 <strong>Unnity.in</strong>
               </a>
-            </p>
+            </p> */}
             <div className="flex flex-wrap gap-3 md:gap-5">
               {[
                 "Privacy Policy",

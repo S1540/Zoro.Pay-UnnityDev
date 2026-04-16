@@ -93,7 +93,7 @@ export default function Features() {
               For real people.
             </h2>
           </div>
-          <Link href="/under-maintenance">
+          <Link href="/under-maintenance" className=" hidden md:block">
             <Button
               name={"Apply now"}
               px={"px-4"}

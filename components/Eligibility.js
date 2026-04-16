@@ -61,7 +61,7 @@ export default function Eligibility() {
                 {criteria.map((c, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-2.5 bg-white border border-slate-200 rounded-[10px] px-3.5 py-3"
+                    className="flex items-center gap-2.5 bg-white border border-slate-200 rounded-md px-3.5 py-3"
                   >
                     <div className="w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
                       <svg

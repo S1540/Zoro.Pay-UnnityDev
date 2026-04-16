@@ -314,6 +314,7 @@ export default function Footer() {
       </div>
 
       {/* SEO Link Grid — KreditBee style */}
+      {/* SEO Link Grid — improved alignment */}
       <div className="border-t border-white/5 bg-[#080c10]">
         <div className="max-w-7xl mx-auto px-5 sm:px-8 py-10">
           {seoLinkCategories.map((cat, idx) => (
@@ -332,19 +333,35 @@ export default function Footer() {
                 </span>
               </div>
 
-              <ul className="flex flex-wrap gap-x-0 gap-y-1.5 flex-1">
-                {cat.links.map((link, i) => (
-                  <li
-                    key={link}
-                    className="w-1/2 sm:w-1/3 lg:w-1/5 flex items-center gap-1.5 text-xs text-slate-500 hover:text-blue-400 transition-colors"
-                  >
-                    <span className=" h-full w-[1px] bg-slate-600 flex-shrink-0">
-                      {" "}
-                    </span>
-                    <span className="truncate">{link}</span>
-                  </li>
-                ))}
-              </ul>
+              {/* Links grid — equal columns with pipe separator */}
+              <div className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-y-[10px]">
+                {cat.links.map((link, i) => {
+                  const isLastCol = (i + 1) % 4 === 0;
+                  const isLastItem = i === cat.links.length - 1;
+                  const hidePipe = isLastCol || isLastItem;
+
+                  return (
+                    <div
+                      key={link}
+                      className="flex items-center text-[11px] text-slate-500"
+                    >
+                      <Link
+                        href="/under-maintenance"
+                        className="flex-1 hover:text-blue-400 transition-colors truncate"
+                      >
+                        {link}
+                      </Link>
+                      <span
+                        className={`px-2.5 text-slate-700 select-none ${
+                          hidePipe ? "invisible" : ""
+                        }`}
+                      >
+                        |
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           ))}
         </div>

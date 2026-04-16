@@ -96,7 +96,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/under-maintenance"
-            className="block mt-4 text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl"
+            className="block mt-4 text-center bg-[#0B409C] hover:bg-[#032e78] text-white font-semibold py-3 rounded-xl"
             onClick={() => setMenuOpen(false)}
           >
             Apply Now →
